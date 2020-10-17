@@ -73,12 +73,12 @@ public class AwtHelloComPort {
   //      - 5 means keyboard key pressed
   //      - 6 means keyboard key released
 
-  // delta not more then 120
+  // delta not more then 125
   public void writeMouseMove(int relX, int relY) {
-    if (relX < -120 || relX > 120) {
+    if (relX < -125 || relX > 125) {
       throw new RuntimeException("relX is out of range: " + relX);
     }
-    if (relY < -120 || relY > 120) {
+    if (relY < -125 || relY > 125) {
       throw new RuntimeException("relY is out of range: " + relY);
     }
 
